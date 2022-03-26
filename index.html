@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Recipee</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="./css/reset.css">
+	<link rel="stylesheet" href="./css/basic.css">
+	<link rel="stylesheet" href="./css/index.css">
+	<link rel="stylesheet" href="./css/header.css">
+	<link rel="stylesheet" href="./css/dropmenu.css">
+	<link rel="stylesheet" href="./css/recipe.css">
+</head>
+<body>
+	<header class="header">
+		<ul class="nav">
+			<li class="nav_item hover-scale-up">HOME</li>
+			<li class="nav_item hover-scale-up">ABOUT</li>
+			<li class="nav_item hover-scale-up">CONTACT</li>
+			<li class="nav_item hover-scale-up"><img class="nav_item_logo-img" src="./images/logo.png" alt="logo"></li>
+			<li id="dropdown-box-btn" class="nav_item hover-scale-up">RECIPES<span><img class="nav_item_icon" src="./images/icon_drop-down.svg" alt="" srcset=""></span></li>
+			<li class="nav_item hover-scale-up">ARTICLE<span><img class="nav_item_icon" src="./images/icon_drop-down.svg" alt="" srcset=""></span></li>
+			<li class="nav_item hover-scale-up">SHARE</li>
+		</ul>
+		<div id="dropdown-box" class="dropdown-box">
+			<p class="dropdown-box_item"><a href="#">Chicken</a></p>
+			<p class="dropdown-box_item"><a href="#">Meat</a></p>
+			<p class="dropdown-box_item"><a href="#">Salads</a></p>
+		</div>
+	</header>
+	<main class="main index-page">
+		<div class="container">
+			<h1 class="slogan">3000+ Resipes Waiting for you</h1>
+			<input id="search-bar" class="search-bar" placeholder="Search Foods...">
+
+
+			<section class="slider">
+				<div class="slider_slide slider_slide-active">
+					<a href="./views/tomo.html"><img class="slider_slide_img" src="./images/tomo-recipe/img_tomo_main.jpeg" alt=""></a>
+				</div>
+				<div class="slider_slide">
+					<a href="./views/tomo.html"><img class="slider_slide_img" src="./images/tomo-recipe/img_tomo_main.jpeg" alt=""></a>
+				</div>
+				<div class="slider_slide">
+					<a href="./views/tomo.html"><img class="slider_slide_img" src="./images/tomo-recipe/img_tomo_main.jpeg" alt=""></a>
+				</div>
+				<div class="slider_slide">
+					<a href="./views/tomo.html"><img class="slider_slide_img" src="./images/tomo-recipe/img_tomo_main.jpeg" alt=""></a>
+				</div>
+				<div id="slider_btn_prev" class=" slider_btn slider_btn-prev"></div>
+				<div id="slider_btn_next" class="slider_btn slider_btn-next"></div>
+				<div class="slider_nav">
+					<div class="slider_nav_item slider_nav_item-active"></div>
+					<div class="slider_nav_item"></div>
+					<div class="slider_nav_item"></div>
+					<div class="slider_nav_item"></div>
+				</div>
+			</section>
+
+			<section class="categories-list">
+				<div class="categories-list_item">
+					<img src="./images/tomo-recipe/img_tomo_main.jpeg" alt="" class="categories-list_item_img">
+					<p class="categories-list_item_text">Soaps & Stews</p>
+				</div>
+				<div class="categories-list_item">
+					<img src="./images/tomo-recipe/img_tomo_main.jpeg" alt="" class="categories-list_item_img">
+					<p class="categories-list_item_text">Breakfast</p>
+				</div>
+				<div class="categories-list_item">
+					<img src="./images/tomo-recipe/img_tomo_main.jpeg" alt="" class="categories-list_item_img">
+					<p class="categories-list_item_text">Salads</p>
+				</div>
+				<div class="categories-list_item">
+					<img src="./images/tomo-recipe/img_tomo_main.jpeg" alt="" class="categories-list_item_img">
+					<p class="categories-list_item_text">Main Dishes</p>
+				</div>
+				<div class="categories-list_item">
+					<img src="./images/tomo-recipe/img_tomo_main.jpeg" alt="" class="categories-list_item_img">
+					<p class="categories-list_item_text">Desserts</p>
+				</div>
+			</section>
+		</div>
+	</main>
+	<script src="./javascript/index.js"></script>
+</body>
+</html>

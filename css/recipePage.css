@@ -1,0 +1,236 @@
+.recipe-page {
+  width: 100%;
+  height: calc(100vh - 75px);
+  display: flex;
+}
+.section {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+.section:first-child .section_outer {
+  display: block;
+}
+.section_tab {
+  display: flex;
+  height: calc(100vh - 120px);
+  align-items: center;
+  margin: auto 0;
+  padding: 8px;
+  background-color: var(--bg-color-darkgrey);
+  border-radius: 15px;
+  color: var(--txt-color-white);
+}
+.section_tab:hover {
+  background-color: var(--bg-color-white);
+  color: var(--txt-color-black);
+}
+.section_tab_text {
+  margin: 0;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+}
+.section_tab-open {
+  position: relative;
+  background-color: var(--bg-color-white);
+  color: var(--txt-color-black);
+}
+.section_outer {
+  display: none;
+  overflow-y: scroll;
+  width: calc(100vw - 266px);
+}
+
+.container {
+  position: relative;
+  max-width: 80%;
+  padding: 45px;
+  margin: 50px auto;
+  border-radius: 10px;
+  border-color: white;
+  opacity: 0.9;
+}
+.display-items {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -20px;
+}
+.display-items_item {
+  margin: 0 20px 35px;
+  text-align: center;
+}
+
+.over-view_container {
+  display: flex;
+}
+.over-view_content {
+  width: 50%;
+  margin-left: 30px;
+}
+.over-view_content_tags {
+  display: flex;
+  margin-bottom: 70px;
+}
+.over-view_content_tags > li {
+  margin-right: 15px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: var(--txt-color-black);
+  text-align: center;
+  color: var(--txt-color-white);
+  font-size: 16px;
+}
+.over-view_content_explain {
+  line-height: 1.5em;
+}
+.over-view_img {
+  width: 50%;
+  height: 450px;
+  object-fit: cover;
+}
+.over-view_feedback {
+  display: flex;
+  margin-left: -10px;
+}
+.over-view_feedback_img {
+  width: 25px;
+  height: 25px;
+  position: relative;
+  top: 5px;
+  margin: 0 10px;
+}
+.ingredients {
+}
+.ingredients_content {
+}
+.ingredients_content_items {
+}
+.ingredients_content_items_item {
+}
+.ingredients_content_items_item_img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+}
+.method {
+}
+.method_content {
+}
+.method_content_lists {
+}
+.method_content_lists > li {
+  margin: 35px 25px;
+  padding: 20px;
+  background-color: rgba(266, 266, 266, 0.8);
+  border-radius: 10px;
+  font-size: 16px;
+  list-style: decimal;
+  list-style-position: inside;
+}
+.video {
+}
+.video_content {
+}
+.video_content_iframe {
+  width: 100%;
+  height: calc(100vw * 0.3);
+}
+.review {
+}
+.review_content {
+  position: relative;
+}
+.review_content_comment {
+  margin: 35px 0;
+  padding: 20px;
+  background-color: rgba(266, 266, 266, 0.8);
+  border-radius: 10px;
+}
+.review_content_profle {
+  display: flex;
+}
+.review_content_img {
+  width: 50px;
+  height: 50px;
+  margin-right: 25px;
+  margin-bottom: 15px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.review_content_name {
+  margin: 4px 0px 6px 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+.review_content_form {
+  position: absolute;
+  left: 200px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 500px;
+  height: 500px;
+  padding: 30px;
+  background-color: var(--bg-color-darkgrey);
+}
+.review_form_title {
+  padding: 10px 20px;
+  background-color: var(--bg-color-white);
+  border-radius: 20px;
+}
+.review_form_input {
+  width: 75%;
+  height: 30px;
+  margin-bottom: 20px;
+}
+.review_form_text-area {
+  width: 370px;
+  height: 150px;
+}
+.review_form_submit {
+  width: 100px;
+  text-align: center;
+}
+.review_content_form_open-btn {
+  width: 150px;
+  margin: 0;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: var(--bg-color-black);
+  color: var(--txt-color-white);
+  text-align: center;
+}
+.review_content_form_close-btn:hover {
+  background-color: var(--bg-color-white);
+  padding: 0 10px;
+  border-radius: 20px;
+}
+.recipes {
+}
+.recipes_item {
+  width: 200px;
+}
+.recipes_item_img {
+  width: 200px;
+  height: 300px;
+  padding: 100px 0;
+  background-image: url(../images/tomo-recipe/img_tomo_main.jpeg);
+  background-size: cover;
+}
+.recipes_item_cook-time::before {
+  position: relative;
+  top: 3px;
+  left: -5px;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-image: url("../images/icon_timer.svg");
+  background-size: 15px 15px;
+  content: "";
+}
+.similar-recipes {
+}
+.similar-recipes_content {
+}

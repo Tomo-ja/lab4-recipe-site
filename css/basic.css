@@ -1,0 +1,81 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+:root {
+  /* color setting */
+  --bg-color-white: #fff;
+  --bg-color-black: #000;
+  --bg-color-grey: #7e7d7d;
+  --bg-color-darkgrey: #363636;
+  --bg-color-greenyellow: #adff2f;
+  --txt-color-white: #fff;
+  --txt-color-black: #000;
+  --txt-color-blue: #4654e1;
+  --border-color-white: #fff;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+h1 {
+  margin: 0 1.5em 1em 0;
+  font-size: 26px;
+}
+
+h2 {
+  margin: 1em 1.5em;
+  font-size: 16px;
+}
+h3 {
+  font-size: 24px;
+  margin: 20px;
+  padding: 10px 20px;
+}
+p {
+  margin-bottom: 45px;
+  font-size: 16px;
+}
+a {
+  color: var(--bg-color-black);
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+input {
+  all: unset;
+  width: 100%;
+  padding: 1em 1.25em;
+  border-radius: 10px;
+  background-color: var(--bg-color-white);
+  text-align: left;
+  color: var(--txt-color-black);
+  font-size: 16px;
+}
+input::placeholder {
+  color: var(--txt-color-blue);
+  opacity: 0.5;
+}
+textarea {
+  margin-bottom: 20px;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.main {
+  background-image: url(../images/tomo-recipe/Main-banner-1-1903x852.jpg);
+  background-size: cover;
+}
+
+.container {
+  width: 850px;
+  margin: 0 auto;
+}
+.hover-scale-up:hover {
+  transform: scale(1.3);
+  -webkit-transition: transform 0.3s;
+}

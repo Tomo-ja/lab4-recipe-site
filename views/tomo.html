@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Recipee</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/basic.css">
+	<link rel="stylesheet" href="../css/header.css">
+	<link rel="stylesheet" href="../css/recipePage.css">
+</head>
+<body>
+	<header class="header">
+		<ul class="nav">
+			<li class="nav_item hover-scale-up">HOME</li>
+			<li class="nav_item hover-scale-up">ABOUT</li>
+			<li class="nav_item hover-scale-up">CONTACT</li>
+			<li class="nav_item hover-scale-up"><img class="nav_item_logo-img" src="../images/logo.png" alt="logo"></li>
+			<li id="dropdown-box_btn" class="nav_item hover-scale-up">RECIPES<span><img class="nav_item_icon" src="../images/icon_drop-down.svg" alt="" srcset=""></span></li>
+			<li class="nav_item hover-scale-up">ARTICLE<span><img class="nav_item_icon" src="../images/icon_drop-down.svg" alt="" srcset=""></span></li>
+			<li class="nav_item hover-scale-up">SHARE</li>
+		</ul>
+		<div id="dropdown-box" class="dropdown-box">
+			<p class="dropdown-box_item"><a href="#">Chicken</a></p>
+			<p class="dropdown-box_item"><a href="#">Meat</a></p>
+			<p class="dropdown-box_item"><a href="#">Salads</a></p>
+		</div>
+	</header>
+	<main class="main recipe-page">
+		<section id="over-view" class="section over-view">
+			<div class="section_tab section_tab-open">
+				<p class="section_tab_text">Overview</p>
+			</div>
+			<div class="section_outer">
+				<div class="container over-view_container">
+					<img class="over-view_img" src="../images/tomo-recipe/img_tomo_main.jpeg" alt="" srcset="">
+					<div class="over-view_content">
+						<h1>Nikujaga(肉じゃが)</h1>
+						<ul class="over-view_content_tags display-items">
+							<li class="display-items_item">Japanese</li>
+							<li class="display-items_item">Main</li>
+							<li class="display-items_item">Meat</li>
+							<li class="display-items_item">Potato</li>
+						</ul>
+						<p class="over-view_content_explain">We are making Nikujaga, one of the most popular dishes in home cooking. This time, we will add a minimum amount of water to bring out the maximum flavor from the ingredients. The combined umami of the meat and vegetable makes this dish absolutely delicious!</p>
+						<div class="over-view_feedback">
+							<p><img class="over-view_feedback_img" src="../images/icon_good-btn.svg" alt="">100</p>
+							<p><img class="over-view_feedback_img" src="../images/icon_timer.svg"> 30 min</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="ingredients" class="section ingredients">
+			<div class="section_tab">
+				<p class="section_tab_text">Ingredients</p>
+			</div>
+			<div class="section_outer">
+				<div class="ingredients_content container">
+					<h1>Ingredients</h1>
+					<div class="ingredients_content_items display-items">
+						<div class="ingredients_content_items_item display-items_item">
+							<img class="ingredients_content_items_item_img" src="../images/tomo-recipe/img_tomo_thin-beef.webp" alt="">
+							<p>Thin Beef Slices</p>
+						</div>
+						<div class="ingredients_content_items_item display-items_item">
+							<img class="ingredients_content_items_item_img" src="../images/tomo-recipe/img_tomo_potato.jpeg" alt="">
+							<p>Potatoes</p>
+						</div>
+						<div class="ingredients_content_items_item display-items_item">
+							<img class="ingredients_content_items_item_img" src="../images/tomo-recipe/img_tomo_carrot.jpeg" alt="">
+							<p>Carrot</p>
+						</div>
+						<div class="ingredients_content_items_item display-items_item">
+							<img class="ingredients_content_items_item_img" src="../images/tomo-recipe/img_tomo_onion.jpeg" alt="">
+							<p>Onion</p>
+						</div>
+						<div class="ingredients_content_items_item display-items_item">
+							<img class="ingredients_content_items_item_img" src="../images/tomo-recipe/img_tomo_green-peas.jpeg" alt="">
+							<p>Green peas</p>
+						</div>
+						<div class="ingredients_content_items_item display-items_item">
+							<img class="ingredients_content_items_item_img" src="../images/tomo-recipe/img_tomo_soy-souce.png" alt="">
+							<p>Soy sauce</p>
+						</div>
+						<div class="ingredients_content_items_item display-items_item">
+							<img class="ingredients_content_items_item_img" src="../images/tomo-recipe/img_tomo_sugar.webp" alt="">
+							<p>Sugar</p>
+						</div>
+						<div class="ingredients_content_items_item display-items_item">
+							<img class="ingredients_content_items_item_img" src="../images/tomo-recipe/img_tomo_sake.jpeg" alt="">
+							<p>Sake</p>
+						</div>
+						<div class="ingredients_content_items_item display-items_item">
+							<img class="ingredients_content_items_item_img" src="../images/tomo-recipe/img_tomo_dashi.jpeg" alt="">
+							<p>Dashi stock</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="method" class="section method">
+			<div class="section_tab">
+				<p class="section_tab_text">Method</p>
+			</div>
+			<div class="section_outer">
+				<div class="method_content container">
+					<h1>How to cook</h1>
+					<ol class="method_content_lists">
+						<li>First, let's prepare the ingredients. Cut the potato into relatively large bite-size pieces. Lightly rinse the potato and wipe the excess water from the surface.</li>
+						<li>Cut the carrot into bite-size pieces while slightly rotating it for each cut.</li>
+						<li>Cut the onion in half lengthwise and slice it into 4 wedges along the grain, leaving the bottom part still attached.</li>
+						<li>Remove the firm stringy part from the snow pea pods. Pull the string from the stem end to the tip along the pod.</li>
+						<li>Let's make Nikujaga. Heat about a half tablespoonful of vegetable oil in a pan. Arrange the beef slices on the pan.</li>
+						<li>When the redness in the beef almost turns brown, transfer all of the beef to a tray.</li>
+						<li>Now, in the same pan, add the potato and carrot and stir-fry.</li>
+						<li>Thoroughly stir-fry until the surface of the potato becomes translucent. Cooking the ingredients thoroughly at this stage helps to reduce the water you will add later.</li>
+						<li>Distribute the saved beef onto the potato. Pour over the dashi stock.</li>
+						<li>Add the sugar and sake. Submerge the sugar in the broth and lightly stir to dissolve it.</li>
+						<li>Cover the ingredients with a paper towel. This will work as an otoshibuta, also known as a drop-lid, and help cook the ingredients with a smaller amount of broth.</li>
+						<li>Cover with a lid that fits the pan well and simmer for 10 minutes. When you check the heat, listen to the sound at a close distance. You will hear the pleasant simmering sound at the desired heat level. If the heat is too strong, the potato will break apart as the broth boils.</li>
+						<li>When you have simmered for 10 minutes, move the paper towel to the side and pour over the soy sauce.</li>
+						<li>After simmer for 10 minutes more, skewer the potato with a bamboo stick to check if it is cooked through.</li>
+						<li>Finally, arrange the ingredients and garnish with the saved snow peas. This nikujaga is colorful, visually appealing and delicious!</li>
+					</ol>
+				</div>
+			</div>
+		</section>
+		<section id="video" class="section video">
+			<div class="section_tab">
+				<p class="section_tab_text">Cook with Video</p>
+			</div>
+			<div class="section_outer">
+				<div class="video_content container">
+					<h1>Cook with the video</h1>
+					<iframe class="video_content_iframe" src="https://www.youtube.com/embed/lCuP3_dMtpA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+			</div>
+		</section>
+		<section id="review" class="section review">
+			<div class="section_tab">
+				<p class="section_tab_text">Review</p>
+			</div>
+			<div class="section_outer">
+				<div class="review_content container">
+					<h1>Review</h1>
+					<p id="review_form_open-btn" class="review_content_form_open-btn hover-scale-up">Write a review</p>
+					<form action="#" id="review_content_form" class="review_content_form">
+						<h3 class="review_form_title">Create Review</h3>
+						<input class="review_form_input" type="text" placeholder="Name">
+						<input class="review_form_input" type="text" placeholder="Email">
+						<textarea class="review_form_text-area" placeholder="Tell me your review..."></textarea>
+						<input type="submit" class="hover-scale-up review_form_input review_form_submit">
+						<div id="review_form_close-btn" class="review_content_form_close-btn">Back</div>
+					</form>
+					<div class="review_content_comment">
+						<div class="review_content_profle">
+							<img class="review_content_img" src="../images/tomo-recipe/dammy_img_apple.jpg" alt="">
+							<div>
+								<h2 class="review_content_name">Name of person</h2>
+								<p>Cook at March 13th, 2022</p>
+							</div>
+						</div>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta officiis deserunt quidem odit quisquam qui sed voluptas consequuntur dolor atque?</p>
+					</div>
+					<div class="review_content_comment">
+						<div class="review_content_profle">
+							<img class="review_content_img" src="../images/tomo-recipe/dammy_img_apple.jpg" alt="">
+							<div>
+								<h2 class="review_content_name">Name of person</h2>
+								<p>Cook at March 13th, 2022</p>
+							</div>
+						</div>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta officiis deserunt quidem odit quisquam qui sed voluptas consequuntur dolor atque?</p>
+					</div>
+					<div class="review_content_comment">
+						<div class="review_content_profle">
+							<img class="review_content_img" src="../images/tomo-recipe/dammy_img_apple.jpg" alt="">
+							<div>
+								<h2 class="review_content_name">Name of person</h2>
+								<p>Cook at March 13th, 2022</p>
+							</div>
+						</div>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta officiis deserunt quidem odit quisquam qui sed voluptas consequuntur dolor atque?</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="similar-recipes" class="section similar-recipes">
+			<div class="section_tab">
+				<p class="section_tab_text">Similar Recipes</p>
+			</div>
+			<div class="section_outer">
+				<div class="similar-recipes_content container">
+					<h1>Similar Recipes</h1>
+					<div class="recipes display-items">
+						<div class="recipes_item display-items_item">
+							<div class="recipes_item_img">
+							</div>
+							<h2>dish name</h2>
+							<p class="recipes_item_cook-time">cook time</p>
+						</div>
+						<div class="recipes_item display-items_item">
+							<div class="recipes_item_img">
+							</div>
+							<h2>dish name</h2>
+							<p class="recipes_item_cook-time">cook time</p>
+						</div>
+						<div class="recipes_item display-items_item">
+							<div class="recipes_item_img">
+							</div>
+							<h2>dish name</h2>
+							<p class="recipes_item_cook-time">cook time</p>
+						</div>
+						<div class="recipes_item display-items_item">
+							<div class="recipes_item_img">
+							</div>
+							<h2>dish name</h2>
+							<p class="recipes_item_cook-time">cook time</p>
+						</div>
+						<div class="recipes_item display-items_item">
+							<div class="recipes_item_img">
+							</div>
+							<h2>dish name</h2>
+							<p class="recipes_item_cook-time">cook time</p>
+						</div>
+						<div class="recipes_item display-items_item">
+							<div class="recipes_item_img">
+							</div>
+							<h2>dish name</h2>
+							<p class="recipes_item_cook-time">cook time</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="serve-with" class="section serve-with">
+			<div class="section_tab">
+				<p class="section_tab_text">Serve with</p>
+			</div>
+			<div class="section_outer">
+				<div class="serve-with_content container">
+					<h1>Serve with</h1>
+					<div class="recipes display-items">
+						<div class="recipes_item display-items_item">
+							<div class="recipes_item_img">
+							</div>
+							<h2>dish name</h2>
+							<p class="recipes_item_cook-time">cook time</p>
+						</div>
+						<div class="recipes_item display-items_item">
+							<div class="recipes_item_img">
+							</div>
+							<h2>dish name</h2>
+							<p class="recipes_item_cook-time">cook time</p>
+						</div>
+						<div class="recipes_item display-items_item">
+							<div class="recipes_item_img">
+							</div>
+							<h2>dish name</h2>
+							<p class="recipes_item_cook-time">cook time</p>
+						</div>
+						<div class="recipes_item display-items_item">
+							<div class="recipes_item_img">
+							</div>
+							<h2>dish name</h2>
+							<p class="recipes_item_cook-time">cook time</p>
+						</div>
+						<div class="recipes_item display-items_item">
+							<div class="recipes_item_img">
+							</div>
+							<h2>dish name</h2>
+							<p class="recipes_item_cook-time">cook time</p>
+						</div>
+						<div class="recipes_item display-items_item">
+							<div class="recipes_item_img">
+							</div>
+							<h2>dish name</h2>
+							<p class="recipes_item_cook-time">cook time</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<script src="../javascript/jquery-3.6.0.min.js"></script>
+	<script src="../javascript/recipePage.js"></script>
+</body>
+</html>
