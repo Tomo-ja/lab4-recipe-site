@@ -38,6 +38,7 @@ p {
 }
 a {
   color: var(--bg-color-black);
+  text-decoration: none;
 }
 
 img {
